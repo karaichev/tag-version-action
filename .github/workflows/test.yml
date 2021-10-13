@@ -15,6 +15,7 @@ jobs:
       - run: |
           npm run all
   test:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
