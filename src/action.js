@@ -10,8 +10,15 @@ async function run() {
     ...github.context.owner,
     ...github.context.repo,
   });
-  
-  console.log(tags);
+
+  let result = '';
+
+  if (tags.data) {
+    result = tags.data[0].name || ''
+    console.log(result);
+
+    core.setOutput('version', result)
+  }
 }
 
 run();
