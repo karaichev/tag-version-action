@@ -1,0 +1,23 @@
+{
+  "name": "tag-version-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build src/action.js -o dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karaichev/tag-version-action.git"
+  },
+  "author": "Sergey Karaichev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karaichev/tag-version-action/issues"
+  },
+  "homepage": "https://github.com/karaichev/tag-version-action#readme",
+  "dependencies": {
+    "@vercel/ncc": "^0.31.1"
+  }
+}

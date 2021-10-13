@@ -1,0 +1,12 @@
+name: 'Get tag version'
+author: 'sk'
+
+inputs:
+  GITHUB_TOKEN: 'Github token'
+    required: true
+  TENOR_TOKEN: 'Tenor api token'
+    required: true
+
+runs:
+  using: 'node12'
+  main: 'dist/indes.js'
