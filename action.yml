@@ -1,12 +1,13 @@
 name: 'Get tag version'
+description: 'Finds latest version from tags'
 author: 'sk'
 
 inputs:
-  GITHUB_TOKEN: 'Github token'
-    required: true
-  TENOR_TOKEN: 'Tenor api token'
+  GITHUB_TOKEN: 
+    description: 'Github token'
     required: true
 
 runs:
   using: 'node12'
   main: 'dist/indes.js'
+  
