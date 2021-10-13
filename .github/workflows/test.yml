@@ -6,7 +6,8 @@ on:
       - master
     
 jobs:
-  build:
+  test:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -14,11 +15,6 @@ jobs:
           npm install
       - run: |
           npm run build
-  test:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
       - uses: ./
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
