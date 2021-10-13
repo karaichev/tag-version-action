@@ -6,6 +6,9 @@ inputs:
   GITHUB_TOKEN: 
     description: 'Github token'
     required: true
+  REGEXP:
+    description: 'Regexp filter'
+    required: false
 
 runs:
   using: 'node12'
